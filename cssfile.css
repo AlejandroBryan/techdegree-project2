@@ -1,0 +1,207 @@
+*{
+
+ box-sizing: border-box;
+ text-align: center;   
+}
+
+body{
+ padding: 0;
+margin: 0 auto;
+background-color: #d8e0ed;
+
+}
+ p{
+     text-align: center;
+ }
+
+h1, h2, h3{
+text-align: center;
+}
+	
+
+
+ a, li {
+    text-decoration: none;
+}
+
+a:hover{
+	color: chartreuse;
+}
+
+
+/*-----nav-----*/
+
+.main-nav{
+
+	margin: auto
+	
+	}
+
+
+.main-nav li{
+    font-weight: 600;
+    font-size: 25px; 
+	padding-bottom: 10px;
+	display: block;
+	width: auto;
+	text-transform: uppercase;
+}
+/*======Header=======*/
+
+header{
+    margin: 0 auto;
+    width: 90%;
+}
+ header p{
+	 padding-top: 45px;
+	 padding-bottom: 45px;
+  
+	 width: 80%;
+	 margin: 0 auto;
+ }
+.profile-img{
+	padding-top: 30px;
+	display: 100%;
+}
+
+
+
+
+
+/*-----cointent-----*/
+.headline{
+ padding: 30px;;   
+}
+
+
+main{
+    background-color: white;
+	padding-bottom: 30px ;
+}
+
+
+img{
+    width: 100%;
+}
+ .portfolio-gen{
+	 display: block;
+ }
+
+
+
+/*-----footer-----*/
+footer{
+    margin: 0 auto;
+}
+
+.foot-name{
+float: left;
+}
+ .foot-nav{
+     float: right;
+     text-transform: uppercase;
+     font-weight: 400;
+ }
+footer li {
+    display: inline-block;
+    padding-left: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+
+/* ===========media queries section===========================*/
+	
+
+	@media(min-width: 769px){
+		
+		.container, .main-header{
+			
+			width: 90%;
+			margin:  auto;	
+		}
+	
+		}
+		.main-nav li{
+			display: inline-block;
+			padding-left: 10px;
+			padding-top: 15px;
+			
+		
+		}
+		.name{
+			text-align: center;
+			
+		}
+		
+		.portfolio-gen{
+			width:50%;
+			
+			
+			
+		}
+		.photo{
+			float: right;
+		}
+		 .main-nav li{
+			text-align: center;
+		}
+		
+
+		.profile-img{
+			float: right;
+			padding-left: 170px;
+			width: 60%;
+		}
+		
+
+		.main-header{
+			padding: 20px;
+		}
+
+		/*-----clearfix-----*/
+
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+
+	}
+	
+
+	
+@media(min-width: 1024px){
+
+.container, .main-header {
+	width: 70%;
+	max-width: 1250px;
+
+}
+.profile-img{
+
+	display: 100%;
+}
+
+.portfolio-gen{
+	width: 30%;
+	padding: 0 5px 0 5px;
+	margin: 0;
+
+	
+}
+.photo1{
+	float: right;
+}
+
+.name{
+	float: left;
+}
+.main-nav li{
+	float: right;
+}
+
+
+
+}
