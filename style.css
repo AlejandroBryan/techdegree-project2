@@ -7,25 +7,30 @@
 body{
  padding: 0;
 margin: 0 auto;
-background-color: #d8e0ed;
+background-color: #8eb6f7;
 
 }
  p{
-     text-align: center;
+	 text-align: center;
+	 font-weight: 700;
  }
 
 h1, h2, h3{
 text-align: center;
+text-transform: uppercase;
+font-family: 'Bitter', serif;
 }
 	
 
 
  a, li {
-    text-decoration: none;
+	text-decoration: none;
+	color: black;
+
 }
 
 a:hover{
-	color: chartreuse;
+	color: rgb(14, 133, 34);
 }
 
 
@@ -33,7 +38,7 @@ a:hover{
 
 .main-nav{
 
-	margin: auto
+	margin:0 auto;
 	
 	}
 
@@ -48,20 +53,19 @@ a:hover{
 }
 /*======Header=======*/
 
-header{
+.main-header{
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
 }
  header p{
-	 padding-top: 45px;
-	 padding-bottom: 45px;
-  
-	 width: 80%;
-	 margin: 0 auto;
+	 padding-top: 15px;
+	 padding-bottom: 12px;
+
  }
 .profile-img{
+	text-align: center;
 	padding-top: 30px;
-	display: 100%;
+	width: 100%;
 }
 
 
@@ -77,17 +81,27 @@ header{
 main{
     background-color: white;
 	padding-bottom: 30px ;
+	border-radius: 6px;
+	border-bottom:2px solid #fc8c03;
 }
 
 
 img{
     width: 100%;
 }
- .portfolio-gen{
+ .img-project{
 	 display: block;
+	 width: 100%;
  }
+.container, .main-header{
 
-
+	display: block;
+	width: 100%;
+	margin:  0 auto;
+}
+ .portfolio-gen{
+	 padding: 2em;
+ }
 
 /*-----footer-----*/
 footer{
@@ -95,113 +109,145 @@ footer{
 }
 
 .foot-name{
-float: left;
+text-align: center;
 }
  .foot-nav{
-     float: right;
+     text-align: center;
      text-transform: uppercase;
      font-weight: 400;
  }
 footer li {
     display: inline-block;
-    padding-left: 5px;
     font-weight: 500;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	margin: 0 auto;
 }
 
 
 
 /* ===========media queries section===========================*/
-	
 
-	@media(min-width: 769px){
+
+	
+	@media(min-width: 768px) {
 		
 		.container, .main-header{
 			
 			width: 90%;
 			margin:  auto;	
 		}
-	
+		.headline{
+			font-family: 'Pacifico', cursive;
+			font-size: 40px;
+			text-transform: uppercase ;
+			border-bottom: 1px solid rgb(65, 25, 25);
 		}
+		h3{
+			text-transform: uppercase ;
+
+			font-size: 20px;
+		}
+	
+		/*=====navigation=====*/
 		.main-nav li{
 			display: inline-block;
 			padding-left: 10px;
 			padding-top: 15px;
-			
+			color: black;
 		
 		}
+		
+		.main-nav li{
+			text-align: center;
+			font-family: 'Pacifico', cursive;
+			
+		}
+		
 		.name{
 			text-align: center;
+			font-size: 30px;
+			border-bottom: 1px solid black;
 			
 		}
 		
 		.portfolio-gen{
 			width:50%;
-			
-			
-			
 		}
+
 		.photo{
 			float: right;
 		}
-		 .main-nav li{
-			text-align: center;
-		}
-		
+		/*=====header=====*/
 
 		.profile-img{
 			float: right;
-			padding-left: 170px;
+			padding:10px;
 			width: 60%;
+			border: 1px solid #fc8c03;
+			margin-left: auto;
 		}
-		
-
 		.main-header{
 			padding: 20px;
 		}
+		.info-text {
+		font-size: 20px;
+		font-weight: 600;
+		font-family: cursive;	
+		padding: 5px;
+		letter-spacing: 1px;
+		width: 40%;
+		}
+		.foot-name{
+			float: left;
+		}
+		.foot-nav{
+			float: right;
+		}
+		.foot-nav li{
+			font-family: cursive;
+		}
+			
 
-		/*-----clearfix-----*/
-
-
-.clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		  }
 
 	}
-	
 
-	
-@media(min-width: 1024px){
+	@media(min-width: 1024px){
 
-.container, .main-header {
-	width: 70%;
-	max-width: 1250px;
+		.container, .main-header{
+			width: 80%;
+			
+		
+		}
+		.profile-img{
+		width: 60%;
+		}
+		
+		.portfolio-gen{
+			width: 33.3%;
+			padding: 0 3px 0 3px;
+			margin: 0;
+			
+		}
+		
+		.photo1{
+			float: right;
+		}
+		
+		.name{
+			float: left;
+		}
 
-}
-.profile-img{
+		.main-nav ul{
+			float: right;
+		}
+		
+		
+		
+		}
+		
 
-	display: 100%;
-}
-
-.portfolio-gen{
-	width: 30%;
-	padding: 0 5px 0 5px;
-	margin: 0;
-
-	
-}
-.photo1{
-	float: right;
-}
-
-.name{
-	float: left;
-}
-.main-nav li{
-	float: right;
-}
-
-
-
-}
