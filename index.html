@@ -5,8 +5,8 @@
  <meta charset="utf-8">
 <title>reponsive layout</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="cssfile.css">
-<link rel="stylesheet" href="norminalize.css">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" >
+
     </head>
 <body>
 
@@ -15,27 +15,24 @@
       <div class="container clearfix"> 
    <h1 class="name">Alejandro Bryan</h1> 
 <ul>
-<li><a href="">home</a></li>
-<li><a href="">portfolio</a></li>
-<li><a href="">contact</a></li>
+<li><a href="#top">home</a></li>
+<li><a href="#portfolio">portfolio</a></li>
+<li><a href="#contact">contact</a></li>
 </ul>
 </nav>
     </div>
  
-<header class="main-header">
+<header class="main-header" id="top">
         <img  class="profile-img" src="images/responsive-layout-profile.png" alt="">
 <p class="info-text clearfix">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      It has survived not only five centuries, but also the leap into electronic typesetting,
-       remaining essentially unchanged.</p>
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
 </header>
 	
 	
 <div class="container">
-<main>
-<h3 class="headline">Portfolio</h3>
+<main id="portfolio">
+<h2 class="headline">Portfolio</h2>
     <div class="portfolio-gen photo">
 <img class="img-project" src="images/portfolio-1.png" alt="">
 <h3>photo gallery</h3>
@@ -88,12 +85,11 @@ Lorem Ipsum has been the industry's
 </main>
 
 
-<footer>
-    <h3>contact</h3>
+<footer id="contact">
+    <h2 class="headline">contact</h2>
 
     <p>
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer  book.
+      Do not hesitate, let´s work together.
     </p>
 
     <p>Email: <a href="mailto:alejandrobryan023@gmail.com?Subject=Hello%20again">alejandrobryan023@gmail.com </a></p>
@@ -103,9 +99,9 @@ Lorem Ipsum has been the industry's
     <h2 class="foot-name">Alejandro Bryan</h2>
     <nav class="foot-nav">
         <ul>
-        <li><a>home</a></li>
-        <li><a>portfolio</a></li>
-        <li><a>contact</a></li>
+        <li><a href="#top">home</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
         </ul>
         </nav>
     
