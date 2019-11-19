@@ -1,13 +1,13 @@
 * {
 
 	box-sizing: border-box;
-	text-align: center;
 }
 
 body {
 	padding: 0;
 	margin: 0 auto;
 	background-color: #8eb6f7;
+	text-align: center;
 
 }
 
@@ -31,9 +31,13 @@ a {
 }
 
 a:hover {
-	color: rgb(14, 133, 34);
+	color: #33ff33;
+
 }
 
+#portfolio:hover {
+	border-bottom-color: aqua;
+}
 
 ul {
 	list-style: none;
@@ -43,14 +47,15 @@ ul {
 
 
 /*-----nav-----*/
-
+.main-nav {
+	margin: auto;
+}
 
 .main-nav li {
 	font-weight: 600;
 	font-size: 25px;
 	padding-bottom: 10px;
 	display: block;
-	width: 0 auto;
 	text-transform: uppercase;
 	background-color: aliceblue;
 	padding: 10px 0;
@@ -64,17 +69,13 @@ ul {
 .main-header {
 	margin: 0 auto;
 	width: 100%;
+	margin-bottom: 30px;
 }
 
-header p {
-	padding-top: 15px;
-	padding-bottom: 12px;
 
-}
 
 .profile-img {
 	text-align: center;
-	padding-top: 30px;
 	width: 100%;
 }
 
@@ -152,14 +153,21 @@ footer li {
 
 @media(min-width: 768px) {
 
-	.container
-	 {
+	.container {
 
 		width: 90%;
+		max-width: 1150px;
 		margin: auto;
 	}
-.main-header {
+
+	.main-header,
+	.main-nav {
+		max-width: 990px;
 		width: 85%;
+	}
+
+	.main-header {
+		margin-bottom: 15vh;
 	}
 
 	h3 {
@@ -174,7 +182,7 @@ footer li {
 		text-align: center;
 		padding-left: 10px;
 		padding-top: 15px;
-	background-color: transparent;
+		background-color: transparent;
 	}
 
 	.name {
@@ -196,15 +204,11 @@ footer li {
 
 	.profile-img {
 		float: right;
-		padding: 1px;
+		padding-left: 10px;
 		width: 60%;
-		border: 1px solid #fc8c03;
-		margin-left: 25px;
+
 	}
 
-	.main-header {
-		padding: 20px;
-	}
 
 	.info-text {
 		font-size: 20px;
@@ -212,7 +216,7 @@ footer li {
 		font-family: cursive;
 		padding: 3px;
 		letter-spacing: 1px;
-		width: 40%;
+
 	}
 
 	.foot-name {
@@ -241,14 +245,11 @@ footer li {
 	.container {
 		width: 80%;
 
-
 	}
+
 	.main-header {
 		width: 75%;
-	}
 
-	.profile-img {
-		width: 60%;
 	}
 
 	.portfolio-gen {
