@@ -13,11 +13,11 @@ body {
 
 p {
 	text-align: center;
-	font-weight: 700;
-	font-family: sans-serif;
+	font-weight: 500;
+	font-family: 'Spectral', serif;
 }
 
-h2,
+
 h3 {
 	text-align: center;
 	text-transform: uppercase;
@@ -52,7 +52,7 @@ ul {
 
 .main-nav li {
 	font-weight: 600;
-	font-size: 25px;
+	font-size: 20px;
 	padding-bottom: 10px;
 	display: block;
 	text-transform: uppercase;
@@ -66,38 +66,9 @@ ul {
 .name {
 	font-family: 'Lobster', cursive;
 	color: black;
-	-webkit-animation-name: name;
-	/* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 2s;
-	/* Safari 4.0 - 8.0 */
-	animation-name: name;
-	animation-duration: 2s;
+	font-size: 40px;
+	font-weight: 500;
 }
-
-
-
-
-@-webkit-keyframes name {
-	0%	{
-		color: #e4eaed;
-	}
-
-	25%	{
-		color: #72a5c2;
-	}
-
-	75%	{
-		color: #3692c7;
-	}
-
-	100%	{
-		color: #166ac4;
-	}
-
-
-}
-
-
 
 
 
@@ -124,10 +95,11 @@ ul {
 /*-----cointent-----*/
 .headline {
 	padding: 30px;
-	font-family: 'Pacifico', cursive;
-	font-size: 40px;
+	font-family: 'Neuton', serif;
+	font-size: 30px;
 	text-transform: uppercase;
 	border-bottom: 1px solid rgb(65, 25, 25);
+	letter-spacing: .7px;
 }
 
 
@@ -155,6 +127,7 @@ img {
 	display: block;
 	width: 100%;
 	margin: 0 auto;
+	min-width: 320px;
 }
 
 .portfolio-gen {
@@ -163,27 +136,47 @@ img {
 
 /*-----footer-----*/
 footer {
-	margin: 0 auto;
+	height: 100px;
+	padding: 20px;
+}
+
+.foot-nav ul {
+	display: none;
+}
+
+.foot-nav h2 {
+	font-size: 20px;
+	float: right;
+	padding-left: 20px;
+	line-height: 12px;
+	height: 12px;
+	letter-spacing: .5px;
+	margin-right: 0;
+	text-transform: uppercase;
+
 }
 
 .foot-name {
-	text-align: center;
+	font-size: 25px;
+	float: left;
+
 }
 
-.foot-nav {
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 400;
-}
-
-footer li {
-	display: inline-block;
+footer p {
+	color: white;
 	font-weight: 500;
-	text-transform: uppercase;
-	margin: 0 auto;
+	font-size: 20px;
+
+}
+a[href*="mailto"]{
+	
+	color: tomato;
+	font-weight: 300;
 }
 
-
+a[href*="mailto"]:hover{
+	color: dodgerblue;
+}
 
 /* ===========media queries section===========================*/
 
@@ -210,7 +203,6 @@ footer li {
 
 	h3 {
 		text-transform: uppercase;
-
 		font-size: 20px;
 	}
 
@@ -249,26 +241,34 @@ footer li {
 
 
 	.info-text {
-		font-size: 20px;
+		font-size: 15px;
 		font-weight: 600;
 		font-family: cursive;
-		padding: 3px;
-		letter-spacing: 1px;
+		letter-spacing: 0.5px;
 
 	}
 
-	.foot-name {
-		float: left;
-	}
+	/*=====foot-nav=====*/
 
-	.foot-nav {
+
+
+	.foot-nav ul {
+		display: inline-flex;
 		float: right;
+		padding-left: 26px;
 	}
 
-	.foot-nav li {
-		font-family: cursive;
+	footer li {
+		padding-right: 10px;
+		font-weight: 700;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-family: 'Courgette', cursive;
 	}
 
+	.foot-nav h2 {
+		display: none;
+	}
 
 	.clearfix::after {
 		content: "";
@@ -290,25 +290,20 @@ footer li {
 
 	}
 
-	.portfolio-gen {
-		width: 33.3%;
-		padding: 0 3px 0 3px;
-		margin: 0;
-
-	}
-
-	.photo1 {
-		float: right;
-	}
-
-	.name {
-		float: left;
-	}
-
 	.main-nav ul {
 		float: right;
 	}
 
-
+	.portfolio-gen {
+		width: 33.3%;
+		padding: 0 3px 0 3px;
+		margin: 0;
+	}
+	.name{
+		float: left;
+	}
+	.photo1 {
+		float: right;
+	}
 
 }
