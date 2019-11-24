@@ -89,8 +89,13 @@ ul {
 	width: 100%;
 }
 
+.info-text {
+		font-size: 15px;
+		font-weight: 500;
+		font-family: 'Courgette', cursive;
+		letter-spacing: 1px;
 
-
+}
 
 
 /*-----cointent-----*/
@@ -230,15 +235,6 @@ a[href*="mailto"]:hover {
 		float: right;
 		padding-left: 10px;
 		width: 60%;
-
-	}
-
-
-	.info-text {
-		font-size: 15px;
-		font-weight: 600;
-		font-family: 'Courgette', cursive;
-		letter-spacing: 0.5px;
 
 	}
 
