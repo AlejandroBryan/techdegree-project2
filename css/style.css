@@ -22,6 +22,7 @@ h3 {
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'Bitter', serif;
+	letter-spacing: 1px;
 }
 
 a {
@@ -99,7 +100,7 @@ ul {
 	font-size: 30px;
 	text-transform: uppercase;
 	border-bottom: 1px solid rgb(65, 25, 25);
-	letter-spacing: .7px;
+	letter-spacing: 2px;
 }
 
 
@@ -108,7 +109,7 @@ main {
 	background-color: white;
 	padding-bottom: 30px;
 	border-radius: 6px;
-	border-bottom: 2px solid #fc8c03;
+	border-bottom: 3px solid #fc8c03;
 }
 
 
@@ -121,8 +122,7 @@ img {
 	width: 100%;
 }
 
-.container,
-.main-header {
+.container {
 
 	display: block;
 	width: 100%;
@@ -130,9 +130,7 @@ img {
 	min-width: 320px;
 }
 
-.portfolio-gen {
-	padding: .5em;
-}
+
 
 /*-----footer-----*/
 footer {
@@ -145,7 +143,7 @@ footer {
 }
 
 .foot-nav h2 {
-	font-size: 20px;
+	font-size: 10px;
 	float: right;
 	padding-left: 20px;
 	line-height: 12px;
@@ -157,7 +155,7 @@ footer {
 }
 
 .foot-name {
-	font-size: 25px;
+	font-size: 10px;
 	float: left;
 
 }
@@ -168,13 +166,14 @@ footer p {
 	font-size: 20px;
 
 }
-a[href*="mailto"]{
-	
+
+a[href*="mailto"] {
+
 	color: tomato;
 	font-weight: 300;
 }
 
-a[href*="mailto"]:hover{
+a[href*="mailto"]:hover {
 	color: dodgerblue;
 }
 
@@ -188,17 +187,12 @@ a[href*="mailto"]:hover{
 
 		width: 90%;
 		max-width: 1150px;
-		margin: auto;
+		margin: 0 auto;
 	}
 
-	.main-header,
-	.main-nav {
-		max-width: 990px;
-		width: 85%;
-	}
 
 	.main-header {
-		margin-bottom: 15vh;
+		margin-bottom: 7vh;
 	}
 
 	h3 {
@@ -223,12 +217,12 @@ a[href*="mailto"]:hover{
 	}
 
 	.portfolio-gen {
-		width: 50%;
+		width: calc(50% - 20px);
+		margin: 0 10px;
+		float: left;
 	}
 
-	.photo {
-		float: right;
-	}
+
 
 	/*=====header=====*/
 
@@ -243,7 +237,7 @@ a[href*="mailto"]:hover{
 	.info-text {
 		font-size: 15px;
 		font-weight: 600;
-		font-family: cursive;
+		font-family: 'Courgette', cursive;
 		letter-spacing: 0.5px;
 
 	}
@@ -276,34 +270,28 @@ a[href*="mailto"]:hover{
 		display: table;
 	}
 
-}
-
-@media(min-width: 1024px) {
-
-	.container {
-		width: 80%;
+	.foot-name {
+		font-size: 20px;
 
 	}
 
-	.main-header {
-		width: 75%;
+	@media(min-width: 1024px) {
+
+		.container {
+			width: 75%;
+
+		}
+
+		.main-nav ul {
+			float: right;
+		}
+
+		.portfolio-gen {
+			width: calc(33.333% - 20px);
+		}
+
+		.name {
+			float: left;
+		}
 
 	}
-
-	.main-nav ul {
-		float: right;
-	}
-
-	.portfolio-gen {
-		width: 33.3%;
-		padding: 0 3px 0 3px;
-		margin: 0;
-	}
-	.name{
-		float: left;
-	}
-	.photo1 {
-		float: right;
-	}
-
-}
