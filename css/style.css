@@ -87,13 +87,14 @@ ul {
 .profile-img {
 	text-align: center;
 	width: 100%;
+	border-radius: 6px;
 }
 
-.info-text {
-		font-size: 15px;
-		font-weight: 500;
-		font-family: 'Courgette', cursive;
-		letter-spacing: 1px;
+.main-header p {
+	font-size: 15px;
+	font-weight: 500;
+	font-family: 'Courgette', cursive;
+	letter-spacing: 1px;
 
 }
 
@@ -112,7 +113,7 @@ ul {
 
 main {
 	background-color: white;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	border-radius: 6px;
 	border-bottom: 3px solid #fc8c03;
 }
@@ -197,7 +198,7 @@ a[href*="mailto"]:hover {
 
 
 	.main-header {
-		margin-bottom: 7vh;
+		margin-bottom: 14vh;
 	}
 
 	h3 {
@@ -233,10 +234,12 @@ a[href*="mailto"]:hover {
 
 	.profile-img {
 		float: right;
-		padding-left: 10px;
-		width: 60%;
+		width: 55%;
+		margin-left: 5px;
 
 	}
+
+
 
 	/*=====foot-nav=====*/
 
@@ -254,6 +257,7 @@ a[href*="mailto"]:hover {
 		font-size: 20px;
 		text-transform: uppercase;
 		font-family: 'Courgette', cursive;
+
 	}
 
 	.foot-nav h2 {
@@ -269,13 +273,19 @@ a[href*="mailto"]:hover {
 	.foot-name {
 		font-size: 20px;
 
+
 	}
+
+	footer p:nth-child(4) {
+		border-bottom: 1px solid rgb(65, 25, 25);
+		padding-bottom: 30px;
+	}
+}
 
 	@media(min-width: 1024px) {
 
 		.container {
 			width: 75%;
-
 		}
 
 		.main-nav ul {
@@ -289,5 +299,4 @@ a[href*="mailto"]:hover {
 		.name {
 			float: left;
 		}
-
 	}
